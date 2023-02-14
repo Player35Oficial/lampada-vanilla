@@ -8,6 +8,13 @@ img.addEventListener('dblclick', () => {
   img.setAttribute("src", "./img/quebrada.jpg")
 })
 
+img.addEventListener('mouseover', () => {
+  img.setAttribute("src", "./img/ligada.jpg")
+})
+img.addEventListener('mouseout', () => {
+  img.setAttribute("src", "./img/desligada.jpg")
+})
+
 
 buttonOn.addEventListener('click', () => {
   let lampadaQuebrada = img.getAttribute("src").includes("quebrada")
