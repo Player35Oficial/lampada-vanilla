@@ -9,10 +9,14 @@ img.addEventListener('dblclick', () => {
 })
 
 img.addEventListener('mouseover', () => {
-  img.setAttribute("src", "./img/ligada.jpg")
+  if (img.getAttribute("src").includes("quebrada") != true) {
+    img.setAttribute("src", "./img/ligada.jpg")
+  }
 })
 img.addEventListener('mouseout', () => {
-  img.setAttribute("src", "./img/desligada.jpg")
+  if (img.getAttribute("src").includes("quebrada") != true) {
+    img.setAttribute("src", "./img/desligada.jpg")
+  }
 })
 
 
